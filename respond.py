@@ -8,7 +8,7 @@ dico = Dict()
 
 class Rest(Resource):
     def get(self, name):
-        return {name: dico.get_inclusive(name)}
+        return Response(dico.get_inclusive(name) + "\n", mimetype='text/html')
 
 class Web(Resource):
     def get(self, name):
