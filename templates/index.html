@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+      body { background-color: #095FB2; }
+      h1, h2 {color: #fff}
+      a { color: #fff; }
+      a:hover{ color:#B27309; text-decoration:none}
+    </style>
 </head>
 <body>
 
@@ -13,7 +19,7 @@
     <h1> Index pour l'écriture inclusive </h1>
     <h2>Ordre alphabétique : </h2>
     {% for key in sorted_dico %}
-    <a href="/web/{{ key }}"> {{ key }}</a><br>
+    <a href="/web/{{ key }}">> {{ key }}</a><br>
     {% endfor %}
   </div>
 </body>
