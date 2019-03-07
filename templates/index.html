@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Index</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <h1> Index pour l'écriture inclusive </h1>
+    <h2>Ordre alphabétique : </h2>
+    {% for key in sorted_dico %}
+    <a href="/web/{{ key }}"> {{ key }}</a><br>
+    {% endfor %}
+  </div>
+</body>
+</html>

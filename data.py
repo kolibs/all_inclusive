@@ -9,11 +9,8 @@ class Dict():
         connect.close()
         db.dispose()
                
-    def generate_html_dict(self):
-        html = ""
-        for key in sorted(self.data):
-            html += "<a href=\"/web/{0}\">>{0}<a/><br />".format(key)
-        return html
-         
+    def sort(self):
+        return [ key for key in sorted(self.data)]
+                 
     def get_inclusive(self, name):
         return self.data[name]
