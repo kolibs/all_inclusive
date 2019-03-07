@@ -13,4 +13,4 @@ class Dict():
         return [ key for key in sorted(self.data)]
                  
     def get_inclusive(self, name):
-        return self.data[name]
+        return self.data.get(name, "Non trouvé")
